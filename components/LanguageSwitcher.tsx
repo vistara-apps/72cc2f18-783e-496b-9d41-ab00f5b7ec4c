@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Globe } from 'lucide-react';
 import { LANGUAGES } from '@/lib/constants';
+import { cn } from '@/lib/utils';
 
 export function LanguageSwitcher() {
   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'es'>('en');
