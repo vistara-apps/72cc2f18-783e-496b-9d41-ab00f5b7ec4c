@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-purple-400 via-blue-500 to-purple-600 text-white min-h-screen;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-lg shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-white bg-opacity-20 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-30 transition-all duration-200 backdrop-blur-sm border border-white border-opacity-30;
+  }
+  
+  .btn-ghost {
+    @apply text-white px-4 py-2 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg px-4 py-3 text-white placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 backdrop-blur-sm;
+  }
+  
+  .alert-banner {
+    @apply px-4 py-3 rounded-lg border backdrop-blur-sm;
+  }
+  
+  .alert-info {
+    @apply bg-blue-500 bg-opacity-20 border-blue-300 border-opacity-30 text-blue-100;
+  }
+  
+  .alert-warning {
+    @apply bg-yellow-500 bg-opacity-20 border-yellow-300 border-opacity-30 text-yellow-100;
+  }
+  
+  .alert-success {
+    @apply bg-green-500 bg-opacity-20 border-green-300 border-opacity-30 text-green-100;
+  }
+  
+  .alert-error {
+    @apply bg-red-500 bg-opacity-20 border-red-300 border-opacity-30 text-red-100;
+  }
+  
+  .recording-indicator {
+    @apply w-4 h-4 rounded-full bg-red-500 animate-recording;
+  }
+  
+  .floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .shape {
+    position: absolute;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+  }
+}
