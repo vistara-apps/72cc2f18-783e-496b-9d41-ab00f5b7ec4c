@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Share2, Copy, Check } from 'lucide-react';
 import { Button } from './Button';
-import { shareContent, copyToClipboard } from '@/lib/utils';
+import { shareContent, copyToClipboard, cn } from '@/lib/utils';
 
 interface ShareButtonProps {
   variant?: 'iconOnly' | 'withText';
