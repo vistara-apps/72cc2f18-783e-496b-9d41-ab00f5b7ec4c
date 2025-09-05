@@ -1,0 +1,14 @@
+{
+  "name": "Know Your Rights Cards",
+  "description": "Know Your Rights Cards is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://72cc2f18-783e-496b-9d41-ab00f5b7ec4c.vercel.app",
+  "properties": {
+    "app": {
+      "name": "Know Your Rights Cards",
+      "description": "Know Your Rights Cards is a Base Mini App built with Zara.",
+      "url": "https://72cc2f18-783e-496b-9d41-ab00f5b7ec4c.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
